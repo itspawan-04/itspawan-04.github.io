@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan - My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/db866a78ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!------------ navbar ------------>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hey there,<br>I'm <span>Pawan </span>Kumar</h1>
+            </div>
+            <a href="Images/RESUME_Pawan.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    <!-------------- about ------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/image_1.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Pawan Kumar, a BCA student with a passion for technology and problem-solving. I am dedicated to continuous learning and personal growth, aiming to leverage my skills to make a meaningful impact in the tech industry. With a strong foundation in computer applications and a proactive attitude towards challenges, I am committed to achieving excellence in my field. Thank you for visiting my portfolio.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Develop Websites</li>
+                            <li><span>App Development</span><br>Android applications</li>
+                            <li><span>Machine Learning</span><br>A.I. using ML</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>Bachelor of Computer Applications</li>
+                            <li><span>2022</span><br>Intermediate</li>
+                            <li><span>2020</span><br>High-School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- services ------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I provide professional web design services, creating visually appealing and user-friendly websites. My designs ensure a seamless experience across all devices, tailored to meet your specific needs and align with your brand identity.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-pen-to-square"></i></i>
+                    <h2>App Development</h2>
+                    <p>I specialize in creating high-performing, custom applications for the Android platform. My services include tailored app design, seamless API integration, and comprehensive testing to ensure a flawless user experience</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-photo-film"></i></i></i></i>
+                    <h2>Video Editing</h2>
+                    <p>I offer expert video editing services to enhance your footage with creative techniques. From promotional videos to personal projects, I deliver polished, engaging content that effectively communicates your message.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.jpg">
+                    <div class="layer">
+                        <h3>College Food Hub</h3>
+                        <p>The website is based on college's e-lobby in which student can see their e-lobby online and can order food online.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.jpg">
+                    <div class="layer">
+                        <h3>Travel Website</h3>
+                        <p>The Travel itinerary website on which a person can check various travel itineraries around the world.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.jpg">
+                    <div class="layer">
+                        <h3>Photographs</h3>
+                        <p>Some of my professional photographs which i upload on Instagram.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> pawankmr1357@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9412308470</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100095443831310"><i class="fa-brands fa-square-facebook" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/itspawan_04/"><i class="fa-brands fa-instagram" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/itspawan04/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+                    </div>
+                    <a href="Images/RESUME_Pawan.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Your E-mail ID" required>
+                        <textarea name="Message" rows="6" placeholder="Type Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- copyright section -->
+        <div class="copyright">
+            <p>Copyright @itspawan_04 . Made with <i class="fa-solid fa-heart"></i> by Pawan Kumar</p>
+        </div>
+    </div>
+    
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxK4TurrrpCoCzdQHALH6dfSUrabGcAZDXC1UUxMdro3r07mmdVAcv9gcqY5nDUiLfT/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "The Message has been sent successfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+  </script>
+
+</body>         
+</html>
